@@ -1,13 +1,13 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" type="text/css">
+<link rel="stylesheet" href="styles/main.css" type="text/css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
 <script src="/socket.io/socket.io.js"></script>
 
 
 <div class="box">
-     <div>Chat</div>
-<div class ="chatBox" id="chat-text">
-</div>
+    <div>Chat</div>
+    <div class="chatBox" id="chat-text"></div>
     <form id="chat-form">
         <input id="chat-input" type="text" style="width:30%;height:30px;" autocomplete="off">
         <input class = "btn" type="submit" value="Send"></input>
@@ -16,27 +16,13 @@
 
 <!-- Change style and HTML to the following code -->
     
+<div class="gameContainer"></div>
+<div class="chatContainer">
+        <div>Chat</div>
+        <div id="chat-text" class="chatBox"></div>
+        <form id="chat-form"><input id="chat-input" style="width: 60%; height: 30px;" autocomplete="off" type="text" />
+            <input class="btn" type="submit" value="Send" />
+        </form>
 </div>
- 
- <div class="gameContainer"></div>
- <div class="chatContainer">
-     <div>Chat</div>
-     <div id="chat-text" class="chatBox"></div>
-     <form id="chat-form"><input id="chat-input" style="width: 60%; height: 30px;" autocomplete="off" type="text" /> <input class="btn" type="submit" value="Send" /></form>
- </div>
 
  
-=======
-
-// handle gameResultState
-<script> socket.on('gameResuktState',function(botMove, playerList){
-     console.log('bot move was' + botMove + 'player win status is ' 
-     + playerList[playerId].roundResult + 'and score is' + playerList[playerId].score);
-     }); 
-// above code allows game loop to function 
-//Player chose number correspondance
-     function playerChose(move) {
-          socket.emit('playerMove', move);
-     }
-     </script>
->>>>>>> e07fc8dc4637828919eddb9f2a898f542a16f34f
