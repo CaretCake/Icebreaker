@@ -114,3 +114,25 @@ socket.on('playerMove',function(data){
             thisPlayer.move = data;
         }
 })});
+
+//Number 0 is for rock, 1 is for paper, 2 is for scissors 
+function selectMove () {
+    //generate a random number 0, 1, or 2 to decide what move to make for the AI
+    var move = Math.floor(Math.random() * Math.floor(3));
+    if(move == 0){
+        //rock
+        console.log('the boss has selected rock');
+    }
+    if(move == 1){
+        //paper
+        console.log('the boss has selected paper');
+    }
+    if(move == 2){
+        //scissors
+        console.log('the boss has selected scissors');
+    }
+}
+setInterval(function(){
+    //select a move every 3 seconds        
+    selectMove();
+    }, 3000);
