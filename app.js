@@ -1,3 +1,5 @@
+
+
 //player variable
 var player = {};
 
@@ -136,3 +138,18 @@ setInterval(function(){
     //select a move every 3 seconds        
     selectMove();
     }, 3000);
+
+//Sample Drawing Board (download Bower?)
+
+var imageBoard = new DrawingBoard.Board('title-board', {
+	controls: false,
+	background: 'bower_components/drawingboard.js/example/drawingboardjs.png',
+	color: '#ff0',
+	webStorage: false
+});
+
+//create the drawingboard by passing it the #id of the wanted container
+var defaultBoard = new DrawingBoard.Board('default-board');
+
+// Test run project --> melissa questions on how board works? 
+// Integrate hackathon video and demo preparation
