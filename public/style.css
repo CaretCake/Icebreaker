@@ -1,0 +1,103 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+}
+
+body {
+    background-color: #f5c96e;
+}
+
+div, p {
+	font-family: 'Roboto', sans-serif;
+	color: #1d1d1d;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Zilla Slab', serif;
+}
+
+h1 {
+	font-size: 20	px;
+}
+
+#main-container {
+    height: 700px;
+	max-width: 1200px;
+	display: flex;
+    flex-direction: row;
+    margin: 5% auto auto auto;
+}
+
+#chat-container {
+	width: 25%;
+	display: flex;
+    flex-direction: column;
+	position: relative;
+	margin: 0 5px;
+	background-color:white;
+}
+
+#drawing-board-container {
+	width: 75%;
+	padding: 0 5px;
+}
+
+#intro{
+ 	background-color: #3f8db1;
+ 	color: #FFFFFF;
+ 	height: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    letter-spacing: 1px;
+}
+ 
+ 
+form { 
+ 	background: #000000;
+ 	position: absolute; 
+ 	bottom: 5px; 
+	left: 5px;
+	width: 97%;
+	height: 35px;
+}
+ 
+form input { 
+	background-color: #f4f5f7;
+    border: 0;
+    padding: 10px;
+    width: 80%;
+}
+ 
+form button { 
+	width: 20%;
+    height: 100%;
+ 	background: #ec8780;
+ 	border: none; 
+ 	padding: 5px;
+	color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ 
+#messages { 
+ 	margin: 0; 
+ 	padding: 0; 
+	max-height: 90%;
+	overflow: scroll;	
+}
+ 
+#messages li { 
+ 	padding: 5px 10px; 
+	font-size: 12px;
+}
+ 
+#messages li:nth-child(odd) { 
+ 	background: #f4f5f7; 
+}
+
+
+#list{
+	text-align: right;
+}
