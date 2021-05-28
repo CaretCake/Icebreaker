@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel = "stylesheet" href="reset.css">
 	<link rel = "stylesheet" href="style.css">
+	<link rel="stylesheet" href="drawingboard.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zilla+Slab&display=swap" rel="stylesheet">
 	<script>
@@ -27,6 +28,7 @@
 
 			<script src="/socket.io/socket.io.js"></script>
 			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<script src="drawingboard.min.js"></script>
 			<script>
 				
 					var socket = io();
@@ -48,7 +50,18 @@
 		</div>
 
 		<div id="drawing-board-container">
-			Draw here!
+			<div id="draw-board"></div>
+
+			<style>
+				#draw-board {
+					width: 100%;
+					height: 100%;
+				}
+			</style>
+
+			<script>
+				var myBoard = new DrawingBoard.Board('draw-board');
+			</script>
 		</div>
 	</div>
 </body>
