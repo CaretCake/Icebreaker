@@ -10,6 +10,12 @@ The goal of our icebreaker games is to build a learning environment, where stude
 
 We believe our submission is a standout. It addresses a gap in a virtual education icebreaker technique by incorporating teamwork to break-down student isolation. We've enjoyed this coding experience, and thank you for reviewing our submission.
 
+## The Team
+
+* Zarqa Fatima
+* Leticia Ortega
+* Gabriela Figueroa
+
 ## Getting Started
 
 ### Executing program
